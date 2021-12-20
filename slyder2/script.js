@@ -18,11 +18,9 @@ let step = 0;
   next.addEventListener('click',function() {
       console.log(1)
       step = step + 50
-      if (step > 1300) {
-        step=1300
-      } else {
+      
         slуder.style.transform = `translateX(-${step}px)`;
-      }
+       
         //slуder.style.transform = translateX(-step + 'px');    
   })
 
@@ -34,13 +32,10 @@ let step = 0;
 
 prev.addEventListener('click',function(event) {
     console.log(1)
-    step -= step-50
-     if (step < 0) {
-      step=1300
-     } else {
+    step = step+50
         slуder.style.transform = `translateX(${step}px)`;
-        //slуder.style.transform = translateX(step + 'px'); 
-     }
+        //slуder.style.transform = translateX(-step + 'px'); 
+
   })
 
 
